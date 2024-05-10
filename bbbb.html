@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商城首页</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #f84f4f;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2; /* Ensure header is on top */
+      }
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+      .sousuo {
+        width: 50px;
+        height: 40px;
+        background-color: hsla(354, 29%, 44%, 0.998);
+        border-radius: 1000px;
+        margin-left: 10px;
+      }
+      .login-btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .login-btn:hover {
+        background-color: #45a049;
+      }
+      nav {
+        background-color: #f4f4f4;
+        padding: 10px;
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 70px; /* Adjusted for the header height */
+        z-index: 1;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        margin-bottom: 10px;
+      }
+      nav ul li a {
+        color: #333;
+        text-decoration: none;
+      }
+      .container {
+        margin-top: 120px; /* Adjusted for the combined height of header and category bar */
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .product {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        position: f;
+      }
+      .product img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      .product-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .product-price {
+        color: #4caf50;
+      }
+      .category-bar {
+        background-color: #f1eef4;
+        padding: 10px;
+        width: 100%;
+        position: fixed;
+        top: 50px; /* Adjusted for the header height */
+        z-index: 0; /* Ensure category bar is on top */
+      }
+      .category-bar ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .category-bar ul li {
+        margin: 0 10px;
+      }
+      .category-bar ul li a {
+        color: #333;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .category-bar ul li a:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="商城logo" class="logo" />
+      <p><b>圣火喵喵商城</b></p>
+      <button class="login-btn">登录</button>
+    </header>
+    <div class="category-bar">
+      <ul>
+        <li><a href="#">推荐商品</a></li>
+        <li><a href="#">家电</a></li>
+        <li><a href="#">食品</a></li>
+        <li><a href="#">电脑</a></li>
+        <li><a href="#">男/女装</a></li>
+        <li><a href="#">美妆</a></li>
+        <li><a href="#">图书</a></li>
+        <!-- 可以添加更多分类 -->
+      </ul>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">商城首页</a></li>
+        <li><a href="#">购物车</a></li>
+        <li><a href="#">订单中心</a></li>
+        <li><a href="#">收藏中心</a></li>
+        <li><a href="#">个人中心</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="product">
+        <img src="product1.jpg" alt="商品1" />
+        <div class="product-name">商品名称1</div>
+        <div class="product-price">$50.00</div>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="商品2" />
+        <div class="product-name">商品名称2</div>
+        <div class="product-price">$35.00</div>
+      </div>
+      <!-- 添加更多商品 -->
+    </div>
+  </body>
+</html>
